@@ -37,10 +37,10 @@ class Artist
    end
    
    def self.create(name)
-     self.new(name).tap{|artist| artist.save }
-     #new_artist = self.new(name)
+     #self.new(name).tap{|artist| artist.save }
+     new_artist = self.new(name)
      #new_artist.save
-     #new_artist
+     new_artist
    end
    
    def print_songs
